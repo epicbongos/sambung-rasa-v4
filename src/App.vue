@@ -1,32 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container mx-auto px-20">
+      <div
+        class="fixed flex justify-end items-end content-end bg-blue-300 bottom-0 right-0 rounded-tl-lg transparent text-sky-100 border-l-8 z-50 opacity-90"
+      >
+        <router-link class="px-2" to="/">home</router-link>
+        <router-link class="px-2" to="/LandingPage1">LandingPage1</router-link>
+        <router-link class="px-2" to="/LandingPage2">LandingPage2</router-link>
+      </div>
     </div>
     <router-view />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="scss" scoped>
+$link-light-blue: #5182de;
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.router-link-exact-active {
+  background-color: indianred;
+  cursor: pointer;
 }
 </style>

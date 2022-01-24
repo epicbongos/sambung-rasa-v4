@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div>Route Home</div>
-  </div>
+  <div>asd</div>
 </template>
 
 <script>
 export default {}
 </script>
+
+<style></style>

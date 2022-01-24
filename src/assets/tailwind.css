@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Manrope&family=Rubik+Beastly&display=swap');
+
+@layer base {
+  /* @font-face {
+    font-family: "Manrope";
+    font-weight: 400;
+    src: ("Manrope"), url(/fonts/Manrope-Regular.ttf) format("ttf");
+  } */
+
+  button {
+  }
+
+  h2 {
+    /* @apply text-white font-extrabold text-4xl; */
+  }
+
+  h3 {
+    @apply text-3xl font-bold;
+  }
+
+  h5 {
+    @apply text-green-500;
+  }
+
+  h6 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    @apply pb-2 font-extrabold;
+  }
+
+  html,
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    @apply font-extraThin;
+  }
+}
+
+@layer components {
+  .line {
+    @apply bg-green-400 w-16 h-1 rounded-full mt-2 mb-6;
+  }
+  .bg-footer {
+    background-color: hsl(190, 10%, 24%);
+    color: hsl(0, 0%, 100%);
+  }
+  .hero {
+    @apply w-screen h-screen bg-no-repeat bg-cover bg-left;
+    /* background-image: url(https://cdna.artstation.com/p/assets/images/images/045/172/036/large/sylvain-sarrailh-prodigyb.jpg?1642082982);
+    @apply w-screen h-screen bg-no-repeat bg-cover bg-left; */
+  }
+}
